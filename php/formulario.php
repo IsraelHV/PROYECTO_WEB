@@ -3,23 +3,24 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>.::Pantalla Fromulario::.</title>
+  <title>.::Formulario::.</title>
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-
-
+  <link href=".././css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link  rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href=".././css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link  rel = "stylesheet" href = ".././css/materialize-social.css">
+  
   <!-- My CSS -->
-  <link href="./css/mystyle.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href=".././css/mystyle.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 
 
-  <link rel="icon" type="image/png" href="./Imagenes/escudoESCOM.png">
+  <link rel="icon" type="image/png" href=".././Imagenes/escudoESCOM.png">
 
 
   <!--PHP-->
-  <link href="./css/mystyle.css" type="" rel="stylesheet" media="screen,projection"/>
+  <link href=".././css/mystyle.css" type="" rel="stylesheet" media="screen,projection"/>
 
 </head>
 
@@ -27,17 +28,17 @@
 
   <!-- Dropdown Structure -->
   <ul id="dropdown1" class="dropdown-content">
-    <li><a href="./formulario.html" class="teal-text text-darken-4">Registrarse</a></li>
-    <li><a href="#!" class="teal-text text-darken-4">Comprobante</a></li>
+    <li><a href="./loginEstudiante.php" class="teal-text text-darken-4">Alumno</a></li>
+    
     <li class="divider"></li>
-    <li><a href="#!" class="teal-text text-darken-4">Administrador</a></li>
+    <li><a href="./loginAdministrativo.php" class="teal-text text-darken-4">Administrador</a></li>
   </ul>
 
   <ul id="dropdown2" class="dropdown-content">
-    <li><a href="./formulario.html" class="teal-text text-darken-4">Registrarse</a></li>
-    <li><a href="#!" class="teal-text text-darken-4">Comprobante</a></li>
+    <li><a href="./loginEstudiante.php" class="teal-text text-darken-4">Alumno</a></li>
+    
     <li class="divider"></li>
-    <li><a href="#!" class="teal-text text-darken-4">Administrador</a></li>
+    <li><a href="./loginAdministrativo.php" class="teal-text text-darken-4">Administrador</a></li>
   </ul>
 
     <!-- nav -->
@@ -47,25 +48,20 @@
       
       <div class="nav-wrapper container">
 
-        <a href="./index.html" class="brand-logo cyan-text text-accent-2"><i class="material-icons">computer</i>ESCOM</a>
+        <a href=".././index.html" class="brand-logo cyan-text text-accent-2"><i class="material-icons">computer</i>ESCOM</a>
 
-        <!-- <a id="logo-container" href="#" class="brand-logo cyan-text text-accent-2">
-
-          <img src="./Imagenes/logoESCOM.png">
-          ESCOM 
-
-        </a> -->
+   
 
         <ul class="right hide-on-med-and-down">
-          <li><a href="./index.html" class="cyan-text text-accent-2">Inicio</a></li>
-          <li><a href="#" class="cyan-text text-accent-2">Consultar Resultados</a></li>
-          <li><a href="#" class="cyan-text text-accent-2">Imprimir comprobante</a></li>
-
+          <li><a href=".././index.html" class="cyan-text text-accent-2">Inicio</a></li>
+          
+          <li><a href="./loginEstudiante.php" class="cyan-text text-accent-2">Imprimir comprobante</a></li>
+          <li><a href="./formulario.php" class="cyan-text text-accent-2">Registrarse</a></li>
 
           <!-- Dropdown Trigger -->
-          <li><a class="dropdown-trigger cyan-text text-accent-2" href="#!" data-target="dropdown1">Estudiantes<i class="material-icons right">arrow_drop_down</i></a></li>
 
-          <li><a href="#" class="cyan-text text-accent-2"><i class="material-icons">person</i></a></li>
+          <li><a class="dropdown-trigger cyan-text text-accent-2" href="#!" data-target="dropdown1">Iniciar Sesión<i class="material-icons right">person</i></a></li> 
+    
         
         </ul>
 
@@ -77,15 +73,14 @@
 
   </div>
 
-  <!--Corregi el nav a fija recuerda la estructura-->
+
   <ul id="nav-mobile" class="sidenav cyan darken-4 ">
-    <li><a href="./index.html" class="cyan-text text-accent-2">Inicio</a></li>
-    <li><a href="#" class="cyan-text text-accent-2">Consultar Resultados</a></li>
-    <li><a href="#" class="cyan-text text-accent-2">Imprimir comprobante</a></li>
+    <li><a href=".././index.html" class="cyan-text text-accent-2">Inicio</a></li>
+    <li><a href="./loginEstudiante.php" class="cyan-text text-accent-2">Imprimir comprobante</a></li>
+    <li><a href="./formulario.php" class="cyan-text text-accent-2">Registrarse</a></li>
     
-    <li><a class="dropdown-trigger cyan-text text-accent-2" href="#!" data-target="dropdown2">Estudiantes<i class="material-icons right cyan-text text-accent-2">arrow_drop_down</i></a></li>
+    <li><a class="dropdown-trigger cyan-text text-accent-2" href="#!" data-target="dropdown2">Iniciar Sesión<i class="material-icons right cyan-text text-accent-2">person</i></a></li>
   
-    <li><a href="#" class="cyan-text text-accent-2">Login<i class="material-icons cyan-text text-accent-2">person</i></a></li>
   
   </ul>
 
@@ -100,20 +95,20 @@
 
         <h2 class="header center blue-grey-text text-darken-4">Registro de Datos Generales</h2>
 
-        <div class="row center">
-          <!-- <h4 class="header col s12 light blue-grey-text text-darken-4">Alumnos de nuevo ingreso de la ESCOM (2021)</h4> -->
+        <div class="row center" id="mensaje_oculto">
+          
           <h4 class="header col s12 blue-grey-text text-darken-4">Alumnos de nuevo ingreso de la ESCOM (2021)</h4>
         </div>
 
         <div class="row center">
-          <a href="./formulario.html" id="download-button" class="btn-large waves-effect waves-light cyan darken-4">Imprimir Comprobante</a>
+          <a href="./loginEstudiante.php" id="download-button" class="btn-large waves-effect waves-light cyan darken-4">Imprimir Comprobante</a>
         </div>
 
       </div>
 
     </div>
 
-    <div class="parallax"><img src="./Imagenes/ImagenMate2.jpg" alt="Unsplashed background img 1"></div>
+    <div class="parallax"><img src=".././Imagenes/ImagenMate2.jpg" alt="Unsplashed background img 1"></div>
 
     <br><br>
   </div><!-- Bannner -->
@@ -125,32 +120,42 @@
 
   <div class="container row center">
 
-    <form class="" id="formulario" action="./php/formularioInsert.php" method="POST">
+    <form class="" id="formulario" action="./formularioInsert.php" method="POST">
 
       <div class="row center">
-        <h2 class="header center blue-grey-text text-darken-4" >Identidad</h2>
 
-        <div class="col s12 m6 offset-m3 z-depth-3">
+        <div class="col s12">
+
+            <div class="col s2">
+
+              <img class="center responsive-img" src=".././Imagenes/logo-ipn.png">
+
+            </div>
+
+            <div class="col s8">
+              <h2 class="header center blue-grey-text text-darken-4" >Identidad</h2>
+            </div>
+
+            <div class="col s2">
+              <img class="responsive-img" src=".././Imagenes/escudoESCOM.png">
+            </div>          
+          
+        </div>
+          
+
+        <div class="col s12 m8 offset-m2 l6 offset-l3 z-depth-3" id="contenedorform">
 
             <div class="col s12 m12" id="margen">
 
                 <br>
 
 
-                <!-- <div class="row center">
-                  <div class="input-field">
-                  <i class="material-icons prefix">account_circle</i>
-                  <input placeholder="Placeholder" id="first_name" type="text" class="validate">
-                  <label for="first_name">First Name</label>
-                  </div>
-                </div> -->
-
                   <div class="row center">
                       <div class="input-field">
                         <i class="material-icons prefix">call_to_action</i>
                         <input placeholder="No. de Boleta" id="no_boleta" type="text" class="validate" name="no_boleta">
                         <label for="no_boleta">No. de Boleta:</label>
-                        <span class="helper-text" data-error="Boleta Incorrecta" data-success="Boleta Correcta">Boleta con 10 digitos</span>
+                        <span class="helper-text" data-error="Boleta Incorrecta" data-success="Boleta Correcta">Boleta con 10 dígitos</span>
                       </div>
                   </div>
 
@@ -205,7 +210,7 @@
                         <p>
                           <label>
                             <input name="genero" type="radio" checked  class="validate with-gap" value="1"/>
-                            <span>Hombre</span>
+                            <span class="item-title">Hombre</span>
                           </label>
                         </p>
                     </div>    
@@ -214,7 +219,7 @@
                         <p>
                           <label>
                             <input name="genero" type="radio" class="with-gap" value="2"/>
-                            <span>Mujer</span>
+                            <span class="item-title">Mujer</span>
                           </label>
                         </p>
                     </div>
@@ -240,7 +245,7 @@
 
         <h2 class="header center blue-grey-text text-darken-4" >Contacto</h2>
 
-        <div class="col s12 m6 offset-m3 z-depth-3">
+        <div class="col s12 m8 offset-m2 l6 offset-l3 z-depth-3" id="contenedorform">
 
           <div class="col s12 m12" id="margen">
 
@@ -255,17 +260,6 @@
               </div>
             </div>
 
-            <!-- Logos de Ubicacion
-            add_location
-            domain
-            edit_location
-            gps_fixed
-            location_city
-            location_on
-            location_searching
-            person_pin_circle
-            pin_drop
-            place -->
 
             <div class="row center">
               <div class="input-field">
@@ -360,7 +354,7 @@
           <h2 class="header center blue-grey-text text-darken-4" >Procedencia</h2>
         </div>
 
-        <div class="col s12 m6 offset-m3 z-depth-3">
+        <div class="col s12 m8 offset-m2 l6 offset-l3 z-depth-3" id="contenedorform">
 
           <div class="col s12 m12" id="margen">
 
@@ -382,27 +376,27 @@
       
                       <option value="0" disabled selected>--Selecciona tu escuela--</option>
 
-                      <option value="1" data-icon="./Imagenes/cecyt1.jpg" class="left">CECyT 1 "Gonzalo V&aacute;zquez Vela" IPN</option>
-                      <option value="2" data-icon="./Imagenes/cecyt2.png" class="left">CECyT 2 "Miguel Bernard" IPN</option>
-                      <option value="3" data-icon="./Imagenes/cecyt3.jpg" class="left">CECyT 3 “Estanislao Ram&iacute;rez Ruiz” IPN</option>
-                      <option value="4" data-icon="./Imagenes/cecyt4.jpg">CECyT 4 "L&aacute;zaro C&aacute;rdenas" IPN</option>
-                      <option value="5" data-icon="./Imagenes/cecyt5.png">CECyT 5 "Benito Ju&aacute;rez" IPN</option>
-                      <option value="6" data-icon="./Imagenes/cecyt6.png">CECyT 6 "Miguel Oth&oacute;n de Mendizabal" IPN</option>
-                      <option value="7" data-icon="./Imagenes/cecyt7.png">CECyT 7 "Cuauht&eacute;moc" IPN</option>
-                      <option value="8" data-icon="./Imagenes/cecyt8.jpg">CECyT 8 "Narciso Bassols" IPN</option>
-                      <option value="9" data-icon="./Imagenes/cecyt9.png">CECyT 9 "Juan de Dios B&aacute;tiz" IPN</option>
-                      <option value="10" data-icon="./Imagenes/cecyt10.png">CECyT 10 "Carlos Vallejo M&aacute;rquez" IPN</option>
-                      <option value="11" data-icon="./Imagenes/cecyt11.jpg">CECyT 11 "Wilfrido Massieu" IPN</option>
-                      <option value="12" data-icon="./Imagenes/cecyt12.png">CECyT 12"Jos&eacute; Mar&iacute;a Morelos" IPN</option>
-                      <option value="13" data-icon="./Imagenes/cecyt13.png">CECyT 13"Ricardo Flores Mag&oacute;n" IPN</option>
-                      <option value="14" data-icon="./Imagenes/cecyt14.png">CECyT 14"Luis Enrique Erro Soler" IPN </option>
-                      <option value="15" data-icon="./Imagenes/cecyt15.jpg">CECyT 15 "Diodoro Ant&uacute;nez Echegaray" IPN</option>
-                      <option value="16" data-icon="./Imagenes/cecyt16.png">CECyT 16 "Hidalgo" IPN</option>
-                      <option value="17" data-icon="./Imagenes/cecyt17.jpg">CECyT 17 "Le&oacute;n Guanajuato" IPN</option>
-                      <option value="18" data-icon="./Imagenes/cecyt18.jpg">CECyT 18 "Zacatecas" IPN</option>
-                      <option value="19" data-icon="./Imagenes/cecyt19.png">CECyT 19 "Leona Vicario" - IPN</option>
-                      <option value="20" data-icon="./Imagenes/cet1.jpg">CET 1 "Walter Cross Buchanan" IPN</option>
-                      <option value="21" data-icon="./Imagenes/otro.png">Otro</option>
+                      <option value="1" data-icon=".././Imagenes/cecyt1.jpg" class="left">CECyT 1 "Gonzalo V&aacute;zquez Vela" IPN</option>
+                      <option value="2" data-icon=".././Imagenes/cecyt2.png" class="left">CECyT 2 "Miguel Bernard" IPN</option>
+                      <option value="3" data-icon=".././Imagenes/cecyt3.jpg" class="left">CECyT 3 “Estanislao Ram&iacute;rez Ruiz” IPN</option>
+                      <option value="4" data-icon=".././Imagenes/cecyt4.jpg">CECyT 4 "L&aacute;zaro C&aacute;rdenas" IPN</option>
+                      <option value="5" data-icon=".././Imagenes/cecyt5.png">CECyT 5 "Benito Ju&aacute;rez" IPN</option>
+                      <option value="6" data-icon=".././Imagenes/cecyt6.png">CECyT 6 "Miguel Oth&oacute;n de Mendizabal" IPN</option>
+                      <option value="7" data-icon=".././Imagenes/cecyt7.png">CECyT 7 "Cuauht&eacute;moc" IPN</option>
+                      <option value="8" data-icon=".././Imagenes/cecyt8.jpg">CECyT 8 "Narciso Bassols" IPN</option>
+                      <option value="9" data-icon=".././Imagenes/cecyt9.png">CECyT 9 "Juan de Dios B&aacute;tiz" IPN</option>
+                      <option value="10" data-icon=".././Imagenes/cecyt10.png">CECyT 10 "Carlos Vallejo M&aacute;rquez" IPN</option>
+                      <option value="11" data-icon=".././Imagenes/cecyt11.jpg">CECyT 11 "Wilfrido Massieu" IPN</option>
+                      <option value="12" data-icon=".././Imagenes/cecyt12.png">CECyT 12"Jos&eacute; Mar&iacute;a Morelos" IPN</option>
+                      <option value="13" data-icon=".././Imagenes/cecyt13.png">CECyT 13"Ricardo Flores Mag&oacute;n" IPN</option>
+                      <option value="14" data-icon=".././Imagenes/cecyt14.png">CECyT 14"Luis Enrique Erro Soler" IPN </option>
+                      <option value="15" data-icon=".././Imagenes/cecyt15.jpg">CECyT 15 "Diodoro Ant&uacute;nez Echegaray" IPN</option>
+                      <option value="16" data-icon=".././Imagenes/cecyt16.png">CECyT 16 "Hidalgo" IPN</option>
+                      <option value="17" data-icon=".././Imagenes/cecyt17.jpg">CECyT 17 "Le&oacute;n Guanajuato" IPN</option>
+                      <option value="18" data-icon=".././Imagenes/cecyt18.jpg">CECyT 18 "Zacatecas" IPN</option>
+                      <option value="19" data-icon=".././Imagenes/cecyt19.png">CECyT 19 "Leona Vicario" - IPN</option>
+                      <option value="20" data-icon=".././Imagenes/cet1.jpg">CET 1 "Walter Cross Buchanan" IPN</option>
+                      <option value="21" data-icon=".././Imagenes/otro.png">Otro</option>
       
                     </select>
                     <label>Selecciona tu escuela de procedencia:</label>
@@ -504,7 +498,7 @@
                   <p>
                     <label>
                       <input name="opcion" type="radio" checked  class="validate with-gap" value="1"/>
-                      <span>1ra Opción</span>
+                      <span class="item-title">1ra Opción</span>
                     </label>
                   </p>
               </div>    
@@ -512,8 +506,8 @@
               <div class="input-field col s4">   
                   <p>
                     <label>
-                      <input name="opcion" type="radio" class="with-gap" value=2" />
-                      <span>2da Opción</span>
+                      <input name="opcion" type="radio" class="with-gap" value="2" />
+                      <span class="item-title">2da Opción</span>
                     </label>
                   </p>
               </div>
@@ -521,8 +515,8 @@
               <div class="input-field col s4 right">   
                 <p>
                   <label>
-                    <input name="opcion" type="radio" class="with-gap" value="3"/>
-                    <span>3er Opción</span>
+                    <input name="opcion" type="radio" class="with-gap" value="4"/>
+                    <span class="item-title">4ta Opción</span>
                   </label>
                 </p>
               </div>
@@ -530,8 +524,8 @@
               <div class="input-field col s4 right">   
                 <p>
                   <label>
-                    <input name="opcion" type="radio" class="with-gap" value="4"/>
-                    <span>4ta Opción</span>
+                    <input name="opcion" type="radio" class="with-gap" value="3"/>
+                    <span class="item-title">3er Opción</span>
                   </label>
                 </p>
               </div>
@@ -540,76 +534,28 @@
 
             <br><br><br><br>
 
-            <!-- <p>
-              <label>
-                <input type="checkbox" class="filled-in" checked="checked" />
-                <span>1ra Opción</span>
-              </label>
-
-              <label>
-                <input type="checkbox" class="filled-in" checked="checked" />
-                <span>1ra Opción</span>
-              </label> -->
-
-            <!-- </p>
-            <p>
-              <label>
-                <input type="checkbox" class="filled-in" checked="checked" />
-                <span>2da Opción</span>
-              </label>
-            </p>
-            <p>
-              <label>
-                <input type="checkbox" class="filled-in" checked="checked" />
-                <span>3ra Opción</span>
-              </label>
-            </p>
-            <p>
-              <label>
-                <input type="checkbox" class="filled-in" checked="checked" />
-                <span>4ta Opción</span>
-              </label>
-            </p> -->
+ 
 
 
           </div> 
 
         </div>
 
-        <div class="input-field col s12">  
+
+        <div class="input-field col s12"> 
           <br>
+
+  
 
           <button class="btn waves-effect waves-light cyan darken-4 brown-text text-lighten-3" type="reset" name="action">BORRAR
             <i class="material-icons right">content_cut</i>
           </button>
 
-          <!-- <button class="btn waves-effect waves-light cyan darken-4" type="submit" name="action">REGISTRAR
-            <i class="material-icons right">send</i>
-          </button> -->
-
-          <button class="btn waves-effect waves-light cyan darken-4" type="submit" name="action">REGISTRAR
+          <button data-target="modal1" class="btn modal-trigger" onclick="validarFormulario();">ENVIAR
             <i class="material-icons right">send</i>
           </button>
-          
 
-        </div>
-
-
-        <!--PRUEBA DE MODAL-->
-
-          <!-- Modal Trigger -->
-
-        <div class="input-field col s12"> 
-
-          <!-- <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a> -->
-
-          <!-- <button class="btn waves-effect waves-light cyan darken-4 modal-trigger" href= type="submit" name="action">REGISTRAR
-            <i class="material-icons right">send</i>
-          </button> -->
-
-          <button data-target="modal1" class="btn modal-trigger" onclick="validarFormulario();">ENVIAR</button>
-
-          <!-- <input type="button" name="enviar" value="Enviar" onclick="recibir();"/><br> -->
+  
 
           <!-- Modal Structure -->
           <div id="modal1" class="modal modal-fixed-footer">
@@ -621,11 +567,10 @@
 
             <div class="modal-footer">
 
-              <!-- <button class="btn waves-effect waves-light cyan darken-4" type="submit" name="action">REGISTRAR
-                <i class="material-icons right">send</i>
-              </button> -->
+    
 
-              <a href="#!" class="modal-close waves-effect waves-green btn-flat ">MODIFICAR</a>
+              <a href="#!" class="modal-close waves-effect waves-light btn-flat cyan darken-2">
+              <i class="material-icons right">arrow_back</i>MODIFICAR</a>
               <!-- <a href="#!" class="modal-action waves-effect waves-green btn-flat ">Agreekk</a> -->
               <button class="btn waves-effect waves-light cyan darken-4" type="submit" name="action">ACEPTAR
                 <i class="material-icons right">send</i>
@@ -652,33 +597,36 @@
 
   <br>
 
-  <!-- footer -->
-  <!-- <footer class="page-footer teal"> -->
+   <!-- footer -->
+ 
   <footer class="page-footer cyan darken-4">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
-          <h5 class="cyan-text text-accent-2">Company Bio</h5>
-          <p class="cyan-text text-accent-2">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+          <h5 class="cyan-text text-accent-2">INSTITUTO POLITÉCNICO NACIONAL</h5>
+          <p class="cyan-text text-accent-2">D.R. Instituto Politécnico Nacional (IPN). Av. Luis Enrique Erro S/N, Unidad Profesional Adolfo López Mateos, Zacatenco, Delegación Gustavo A. Madero, C.P. 07738, Ciudad de México 2009-2013.</p>
         </div>
 
         <div class="col l3 s12">
-          <h5 class="cyan-text text-accent-2">Settings</h5>
+          <h5 class="cyan-text text-accent-2">Contactos</h5>
           <ul>
-            <li><a class="cyan-text text-accent-2" href="#!">Link 1</a></li>
-            <li><a class="cyan-text text-accent-2" href="#!">Link 2</a></li>
-            <li><a class="cyan-text text-accent-2" href="#!">Link 3</a></li>
-            <li><a class="cyan-text text-accent-2" href="#!">Link 4</a></li>
+            <li><a class="cyan-text text-accent-2" href="#!">Mesa de ayuda: dudas e información gobmx@funcionpublica.gob.mx</a></li>
+            <li><a class="cyan-text text-accent-2" href="#!">Denuncia contra servidores públicos</a></li>
+            <li><a class="cyan-text text-accent-2" href="#!">Síguenos en</a></li>
+    
+            <a class="waves-effect waves-light social-icon btn facebook" href="https://www.facebook.com/escomipnmx/"><i class="fa fa-facebook"></i></a>
+            <a class="waves-effect waves-light btn-floating social twitter" href="https://twitter.com/escomunidad?lang=es"><i class="fa fa-twitter"></i> Sign in with twitter</a>
+
           </ul>
         </div>
 
         <div class="col l3 s12">
-          <h5 class="cyan-text text-accent-2">Connect</h5>
+          <h5 class="cyan-text text-accent-2">Enlaces</h5>
           <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
+            <li><a class="white-text" href="https://www.gob.mx/sep">www.gob.mx/SEP/</a></li>
+            <li><a class="white-text" href="http://portaltransparencia.gob.mx/buscador/search/search.do?method=begin">Portal de Obligaciones de Transparencia</a></li>
+            <li><a class="white-text" href="https://www.infomex.org.mx/gobiernofederal/home.action"></a>Sistema Infomex</li>
+            <li><a class="white-text" href="https://home.inai.org.mx/">INAI</a></li>
           </ul>
         </div>
 
@@ -686,7 +634,7 @@
     </div>
     <div class="footer-copyright">
       <div class="container">
-        Hecho por <a class="brown-text text-lighten-3" href="https://github.com/IsraelHV">Israel Hernández Vázquez</a>
+      Hecho por <a class="brown-text text-lighten-3" href="https://github.com/IsraelHV">EQUIPO 9 - WEB</a>
       </div>
     </div>
   </footer><!-- footer -->
@@ -694,11 +642,10 @@
 
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
-  <script src="./js/myjavascript.js"></script>
+  <script src=".././js/materialize.js"></script>
+  <script src=".././js/init.js"></script>
+  <script src=".././js/myjavascript.js"></script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-  <script src="./js/sweetAlert.js"></script>
 
   </body>
 </html>

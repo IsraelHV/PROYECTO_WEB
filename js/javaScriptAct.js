@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', function() {
 $(document).ready(function(){
   $('.collapsible').collapsible();
 });
-  
+
 
 $(function () {
   $('#search').quicksearch('table tbody tr');								
@@ -110,6 +110,9 @@ $("#search").keyup(function(){
            $(this).show();                
     });
 }); 
+
+     
+
 
 ///////////////////////////////////////////////////////////////////////
 /*Funcion del onclik*/
@@ -1262,7 +1265,7 @@ function validarFormularioSubmit(evento){
     return;
   } 
 
-  swal("¡ Registro exitoso !", "Datos Registrados, presione el boton para continuar", "success"); 
+  swal("¡ Actualización exitosa !", "Datos Registrados, presione el boton para continuar", "success"); 
   
   setTimeout(function(){
     console.log("Esperando");

@@ -1,7 +1,24 @@
 <?php
 
+    session_start();
     require 'conexionbd.php';
 
+    $no_boletaA = $_SESSION['boletaA'];
+    $contrasena = $_SESSION['contrasena'];
+
+    if(!isset($no_boletaA)){
+    header("location: ./loginAdministrativo.php");
+    }
+
+    $consulta= ("SELECT * FROM administrador;");
+    $queryConsulta= mysqli_query($conexion, $consulta);
+    $resultConsulta=mysqli_fetch_array($queryConsulta);
+
+    $boleta_PA = $resultConsulta[0];
+    $nombre_PA = $resultConsulta[2];
+    $apellidos_PA = $resultConsulta[3];
+
+    
     echo $No_Boleta=$_POST["no_boleta"];
     echo $nombre=$_POST["nombre"];
     echo $apellido_Paterno=$_POST["apellido_Paterno"];
@@ -24,7 +41,6 @@
     $fecha_Formato = explode("/", $fecha_Nacimiento); 
     $fecha_Nacimiento_Insert = $fecha_Formato[2]."-".$fecha_Formato[1]."-".$fecha_Formato[0];
     echo $fecha_Nacimiento_Insert;
- 
 
     $consultaNumSalon= ("SELECT COUNT(*) FROM alumno WHERE horario = 1");
     $queryConsultaNumSalon= mysqli_query($conexion, $consultaNumSalon);
@@ -49,32 +65,14 @@
         $consulta_sql= "INSERT INTO `alumno` (`No_Boleta`, `nombre`, `apellido_Paterno`, `apellido_Materno`, `fecha_Nacimiento`, `genero`, `curp`, `calle`, `numero`, `colonia`, `alcaldia`, `codigo_Postal`, `telefono_Celular`, `correo_Electronico`, `escuela_IPN`, `escuela_NoIPN`, `entidad_Federativa`, `promedio`, `opcion`, `horario`) VALUES ('$No_Boleta', '$nombre', '$apellido_Paterno', '$apellido_Materno', '$fecha_Nacimiento_Insert', '$genero', '$curp', '$calle', '$numero', '$colonia', '$alcaldia', '$codigo_Postal', '$telefono_Celular', '$correo_Electronico', '$escuela_IPN', '$escuela_NoIPN', '$entidad_Federativa', '$promedio', '$opcion',$i)";
         $query_mysql= mysqli_query($conexion, $consulta_sql);
         var_dump($query_mysql);
+        header("location: ./MenuAdministrador.php");
 
     } else {
-
- 
 
         $consulta_sql= "INSERT INTO `alumno` (`No_Boleta`, `nombre`, `apellido_Paterno`, `apellido_Materno`, `fecha_Nacimiento`, `genero`, `curp`, `calle`, `numero`, `colonia`, `alcaldia`, `codigo_Postal`, `telefono_Celular`, `correo_Electronico`, `escuela_IPN`, `escuela_NoIPN`, `entidad_Federativa`, `promedio`, `opcion`, `horario`) VALUES ('$No_Boleta', '$nombre', '$apellido_Paterno', '$apellido_Materno', '$fecha_Nacimiento_Insert', '$genero', '$curp', '$calle', '$numero', '$colonia', '$alcaldia', '$codigo_Postal', '$telefono_Celular', '$correo_Electronico', '$escuela_IPN', '', '$entidad_Federativa', '$promedio', '$opcion','$i')";
         $query_mysql= mysqli_query($conexion, $consulta_sql);
         var_dump($query_mysql);
-    }
-
-    ///////////////////////////////////
-    session_start();
-
-    $no_boleta = $_POST['no_boleta'];
-    $correo_electronico= $_POST['correo_electronico'];
-
-    $q = "SELECT COUNT(*) AS contar FROM alumno WHERE (No_Boleta = '$no_boleta' AND correo_Electronico='$correo_electronico')";
-    $query = mysqli_query($conexion,$q);
-    $array = mysqli_fetch_array($query);
-
-    if($array['contar']>0){
-        $_SESSION['No_Boleta'] = $no_boleta;
-        $_SESSION['correo_Eletronico'] = $correo_electronico;
-        header("location: ./MenuEstudiante.php");
-    } else{
-        header("location: ./formulario.php");
+        header("location: ./MenuAdministrador.php");
     }
 
     mysqli_close($conexion);
